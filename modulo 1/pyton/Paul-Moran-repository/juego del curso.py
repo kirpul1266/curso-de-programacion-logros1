@@ -71,3 +71,5 @@ def juego_de_aventura():
 
 # Iniciar el juego
 juego_de_aventura()
+
+2
