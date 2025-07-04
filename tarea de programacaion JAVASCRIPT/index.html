@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Design Mastery | Digital Agency Portfolio Page</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">Meccem</div>
+      <ul class="nav__links">
+        <li class="link"><a href="#">About</a></li>
+        <li class="link"><a href="#">Case Studies</a></li>
+        <li class="link"><a href="#">News</a></li>
+        <li class="link"><a href="#" class="contact__btn">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="header__container">
+        <div class="header__content">
+          <h1>
+            We are a fully<br />integrated <span>digital<br />agency.</span>
+          </h1>
+          <a href="#" class="start__project">Start a project</a>
+        </div>
+        <div class="footer__cards">
+          <div class="card">
+            <h4>01</h4>
+            <h5>User Research</h5>
+            <p>
+              The process of gathering feedback from users to inform the design
+              and development of products.
+            </p>
+          </div>
+          <div class="card">
+            <h4>02</h4>
+            <h5>User Experience</h5>
+            <p>
+              It refers to the overall experience and satisfaction that a person
+              has while interacting with a product.
+            </p>
+          </div>
+          <div class="card">
+            <h4>03</h4>
+            <h5>User Interface</h5>
+            <p>
+              It refers to the design of software products to enable users to
+              interact with them in an intuitive manner.
+            </p>
+          </div>
+          <div class="card">
+            <h4>04</h4>
+            <h5>Usability Testing</h5>
+            <p>
+              A process of evaluating a product or service by testing it with
+              representative users.
+            </p>
+          </div>
+          <div class="card">
+            <h4>05</h4>
+            <h5>Interaction Design</h5>
+            <p>
+              The process of creating digital products that are user-friendly,
+              intuitive, and enjoyable to use.
+            </p>
+          </div>
+          <div class="card">
+            <h4>06</h4>
+            <h5>Front-end Dev</h5>
+            <p>
+              Involves designing the visual and interactive elements of a
+              website that users interact with.
+            </p>
+            <p>Supported languages: <span id="supported-languages"></span></p>
+            <script>
+              const supportedLanguages = ["HTML", "CSS", "JavaScript"];
+              document.getElementById("supported-languages").textContent = supportedLanguages.join(", ");
+
+              // Traducción automática de título y botón según idioma del navegador
+              document.addEventListener("DOMContentLoaded", function() {
+                const userLang = navigator.language || navigator.userLanguage;
+                if (userLang.startsWith("es")) {
+                  const h1 = document.querySelector(".header__content h1");
+                  if (h1) {
+                    h1.innerHTML = 'Somos una <br />agencia <span>digital<br />integral.</span>';
+                  }
+                  const btn = document.querySelector(".start__project");
+                  if (btn) {
+                    btn.textContent = "Iniciar un proyecto";
+                  }
+                  const cards = document.querySelectorAll(".footer__cards .card");
+                  if (cards.length >= 6) {
+                    cards[0].querySelector("h5").textContent = "Investigación de Usuarios";
+                    cards[0].querySelector("p").textContent = "El proceso de recopilar comentarios de los usuarios para informar el diseño y desarrollo de productos.";
+                    cards[1].querySelector("h5").textContent = "Experiencia de Usuario";
+                    cards[1].querySelector("p").textContent = "Se refiere a la experiencia y satisfacción general que una persona tiene al interactuar con un producto.";
+                    cards[2].querySelector("h5").textContent = "Interfaz de Usuario";
+                    cards[2].querySelector("p").textContent = "Se refiere al diseño de productos de software para permitir a los usuarios interactuar con ellos de manera intuitiva.";
+                    cards[3].querySelector("h5").textContent = "Pruebas de Usabilidad";
+                    cards[3].querySelector("p").textContent = "Un proceso de evaluación de un producto o servicio probándolo con usuarios representativos.";
+                    cards[4].querySelector("h5").textContent = "Diseño de Interacción";
+                    cards[4].querySelector("p").textContent = "El proceso de crear productos digitales que sean fáciles de usar, intuitivos y agradables.";
+                    cards[5].querySelector("h5").textContent = "Desarrollo Front-end";
+                    cards[5].querySelectorAll("p")[0].textContent = "Implica diseñar los elementos visuales e interactivos de un sitio web con los que los usuarios interactúan.";
+                  }
+                }
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
