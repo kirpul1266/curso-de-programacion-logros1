@@ -78,7 +78,7 @@
               const supportedLanguages = ["HTML", "CSS", "JavaScript"];
               document.getElementById("supported-languages").textContent = supportedLanguages.join(", ");
 
-              // Traducción automática de título y botón según idioma del navegador
+      
               document.addEventListener("DOMContentLoaded", function() {
                 const userLang = navigator.language || navigator.userLanguage;
                 if (userLang.startsWith("es")) {
