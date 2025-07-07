@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
   box-sizing: border-box;
@@ -112,6 +112,26 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .calculator {
+    width: 98vw !important;
+    max-width: 340px !important;
+    padding: 10px !important;
+  }
+  .display {
+    font-size: 14px !important;
+    padding: 12px !important;
+    min-height: 40px !important;
+  }
+  .buttons {
+    gap: 6px !important;
+  }
+  .btn {
+    padding: 12px !important;
+    font-size: 10px !important;
+  }
+}
+
 @media (max-width: 900px) {
   body > div {
     flex-direction: column !important;
@@ -135,7 +155,7 @@ body {
     align-items: flex-start !important;
     gap: 20px !important;
   }
-  /* se mestaba desfasando la calculadora y con esto lo arregle :D  */ {
+  .calculator {
     width: 360px !important;
     max-width: 360px !important;
     margin-left: 0 !important;
