@@ -139,17 +139,15 @@ body {
   }
 }
 
+/* Ajuste para que el video se vea bien en móviles */
 @media (max-width: 900px) {
-  body > div {
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 10px !important;
+  video, .calculator video {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 10px auto !important;
   }
-  .calculator, .calculator-bg, .display, .buttons, [style*='width: 320px'] {
-    width: 98vw !important;
-    max-width: 400px !important;
-    margin: 0 auto !important;
-    padding: 10px !important; 
 }
 
 @media (min-width: 901px) {
