@@ -170,6 +170,52 @@ body {
     padding: 20px !important;
   }
 }
+
+/* Responsive: apilar videos y calculadora en móviles */
+@media (max-width: 700px) {
+  body > div {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+  body > div > div {
+    width: 98vw !important;
+    max-width: 400px !important;
+    min-width: 0 !important;
+    margin: 0 auto !important;
+  }
+  .calculator {
+    width: 98vw !important;
+    max-width: 400px !important;
+    min-width: 0 !important;
+    margin: 0 auto 16px auto !important;
+    padding: 12px !important;
+  }
+  .display {
+    font-size: 16px !important;
+    padding: 10px !important;
+    min-height: 40px !important;
+    word-break: break-all;
+  }
+  .buttons {
+    gap: 8px !important;
+  }
+  .btn {
+    padding: 12px 0 !important;
+    font-size: 13px !important;
+    min-width: 0;
+    min-height: 0;
+  }
+  iframe, video, .calculator video {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 10px 0 !important;
+    border-radius: 10px;
+  }
+}
+
 /* marca de agua papa */
 body::after {
   content: "Creado por kirpul!!💖💖💖";
