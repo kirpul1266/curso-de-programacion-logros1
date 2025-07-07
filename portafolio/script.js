@@ -44,7 +44,7 @@ function toRadians(degrees) {
   return degrees * (Math.PI / 180);
 }
 
-// Guardar y cargar notas en localStorage
+// Guardar y cargar notas
 function saveNote() {
   const note = document.getElementById('notepad').value;
   localStorage.setItem('calculator_note', note);
@@ -64,7 +64,7 @@ function addToHistory(entry) {
   document.getElementById('history-log').innerHTML = historyLog.map(e => `<div>${e}</div>`).join('');
 }
 
-// --- AUTOPLAY para videos de YouTube ---
+// --- AUTOPLAY para videitos de YuTube ---
 window.addEventListener('DOMContentLoaded', () => {
   // Forzar autoplay en iframes de YouTube (agrega ?autoplay=1&mute=1 si no está)
   document.querySelectorAll('iframe[src*="youtube.com/embed/"]').forEach(iframe => {
