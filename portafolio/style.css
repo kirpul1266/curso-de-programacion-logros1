@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
   box-sizing: border-box;
@@ -122,7 +122,7 @@ body {
     width: 98vw !important;
     max-width: 400px !important;
   }
-  /* Centrar los elementos en móvil/tablet */
+  /* CENTRADO PARA móvil/tablet */
   body > div > div {
     align-items: center !important;
     margin: 0 auto !important;
@@ -135,8 +135,7 @@ body {
     align-items: flex-start !important;
     gap: 20px !important;
   }
-  /* Solo la calculadora debe tener ancho fijo, los videos/bloc/registro usan su propio ancho */
-  .calculator {
+  /* se mestaba desfasando la calculadora y con esto lo arregle :D  */ {
     width: 360px !important;
     max-width: 360px !important;
     margin-left: 0 !important;
