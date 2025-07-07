@@ -12,6 +12,9 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-image: url('https://i.pinimg.com/originals/87/a1/d8/87a1d82fb5bc9d1e9baee8d72739b656.gif'); /* Cambia esta URL por tu GIF */
+  background-repeat: repeat;
+  background-size: auto;
 }
 
 .calculator {
